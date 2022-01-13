@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #272727;
+  color: #b3b9c5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+.btn {
+  padding: 0.5rem 0.8rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #7d87ff;
+  color: #b3b9c5;
+  outline: none;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  color: #7d87ff;
+  background-color: #b3b9c5;
+}
+
+.container {
+  padding: 1rem 2rem;
+  color: #7d87ff;
+}
+
+.funcContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.container input,
+.container textarea {
+  font-size: 1rem;
+  padding: 0.2rem 0.3rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  color: #272727;
+  border-radius: 2px;
+}
+
+.container button {
+  display: block;
+  margin-top: 1.4em;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: limegreen;
+  background-color: #272727;
+  border: none;
+  outline: none;
+  transition: all 300ms linear;
+}
+
+.container button:hover {
+  background-color: limegreen;
+  color: #272727;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  flex-direction: column;
+}
+
+.data-container{
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.title{
+  text-align: center;
+}
+
+.show-resolutions,
+.show-achievments{
+  align-items: flex-start;
+  padding: 1em ;
+  background-color: #7d87ff;
+  color: #272727;
+}
+
+.show-resolution h2,
+.show-achievments h2{
+  font-size: 1.3em;
+}
+
+.show-resolution p{
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+@media screen and (min-width:400px) {
+  .container input,
+  .container textarea {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width:724px){
+  .flex{
+    flex-direction: row;
+  }
+}
